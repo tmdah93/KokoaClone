@@ -1,2 +1,2 @@
 # KokoaClone
-Nomad Coder Kokoa Clone Coding
+Nomad-Coder Kokoa App Clone Coding
