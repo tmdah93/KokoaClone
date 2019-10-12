@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    meta : 브라우저에 전달하는 추가 정보로써, head에 존재
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Mixin' CSS and HTML</title>
+    <style>
+        body,html {
+            padding : 0;
+            margin : 0;
+            background-color: skyblue;
+            height:100%;
+        }
+        .box {
+            background-color: yellow;
+            width:50%;
+            height:50%;
+            padding:20px 10px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    sementic/non-sementic tag : 의미의 유/무
+    non-sementic : div, span ...
+    sementic : 제목, 문단, 내비게이션 등 section, header, article 등
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="box">
+        <div class="inside-box">
+
+        </div>
+    </div>
 </body>
+
 </html>
