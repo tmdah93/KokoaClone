@@ -95,9 +95,47 @@ browser 크기에 따른 css 적용
     ...
 }
 
+- box-sizing: border-box;
+기본 html, css는 공백의 padding을 주면 content 사이즈를 유지하기 위해서 
+  박스(border)까지의 크기를 키워서 늘림.
+하지만 'box-sizing: border-box;'를 적용해주면 content 사이즈를 유지하기 위해서
+  전체 크기를 키우지 않음.
+ex) <div class="test-box"></div>
+.test-box {
+    width: 500px;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+위의 경우 기존의 html, css는 content의 크기를 (500px, 300px)로 유지하기 위해 
+  전체 크기를 (550px, 330px)로 키워버림.
+하지만, 'box-sizing: border-box;'를 적용해주면 content의 크기는 줄어들지만, 
+  (550px, 330px)로 만들지 않음.
+
 */
+
+@import "./reset.css";
+@import "./statusbar.css";
+@import "./header.css";
+@import "./nav-bar.css";
+@import "./friend.css";
+@import "./friends.css";
+@import "./more.css";
+@import "./settings.css";
+@import "./chat.css";
+
+* {
+    box-sizing: border-box;
+}
+
 html {
-    margin : 0px;
-    width : 100%;
-    height : 100%;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    padding: 10px 20px;
+    color: #020202;
 }
